@@ -269,11 +269,7 @@ private fun DogItemButton(
     ) {
         Icon(
             contentDescription = stringResource(R.string.expand_button_content_description),
-            imageVector = if (expanded) {
-                Icons.Default.KeyboardArrowUp
-            } else {
-                Icons.Default.KeyboardArrowDown
-                   },
+            imageVector = if (expanded) Icons.Default.KeyboardArrowUp else Icons.Default.KeyboardArrowDown,
             tint = MaterialTheme.colorScheme.secondary
         )
     }
